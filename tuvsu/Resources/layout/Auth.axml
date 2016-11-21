@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@color/auth_linerLayoutBackg">
+  <ScrollView
+         android:minWidth="25px"
+         android:minHeight="25px"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/scrollView1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout1">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:minWidth="25px"
+          android:minHeight="25px"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/relativeLayout1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+            android:padding="15dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_tuvgu" />
+      </RelativeLayout>
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:id="@+id/login"
+          android:layout_margin="20dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:inputType="textPersonName"
+          android:background="#fff"
+          android:textColor="@color/auth_btn_backg"
+          android:hint="Login..."
+          android:textColorHint="@color/auth_btn_backg" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:id="@+id/password"
+          android:background="#fff"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:paddingLeft="10dp"
+          android:paddingRight="10dp"
+          android:textColor="@color/auth_btn_backg"
+          android:hint="Password..."
+          android:textColorHint="@color/auth_btn_backg" />
+      
+      <!--???????-->
+      <CheckBox
+          android:text="Показать пароль"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/checkBoxPass"
+          android:textColor="#fff"
+          android:layout_marginLeft="20dp"
+          android:backgroundTint="#ffffffff"
+          android:checked="false"
+          android:buttonTint="#fff8dcff"
+          android:layout_marginTop="5dp" />
+      
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/authStud"
+          android:text="@string/auth_open"
+          android:background="@color/auth_btn_backg"
+          android:layout_marginTop="20dp"
+          android:layout_gravity="right"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp" />
+      <Button
+          android:text="@string/auth_guest"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/authGuest"
+          android:background="@color/auth_btn_backg"
+          android:layout_marginTop="10dp"
+          android:paddingLeft="20dp"
+          android:paddingRight="20dp"
+          android:layout_gravity="right" />
+    </LinearLayout>
+  </ScrollView>
+  <AbsoluteLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:id="@+id/absoluteLayout1">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar1"
+        android:indeterminate="true"
+        android:indeterminateOnly="true"
+        android:indeterminateDrawable="@drawable/progressbarstyle" />
+  </AbsoluteLayout>
+  <AbsoluteLayout
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:id="@+id/absoluteLayout1">
+    <TextView
+        android:text="@string/auth_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/auth_error"
+        android:gravity="center"
+        android:id="@+id/errorText" />
+  </AbsoluteLayout>
+</RelativeLayout>
