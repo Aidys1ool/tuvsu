@@ -139,6 +139,12 @@ namespace tuvsu
 			// aapt resource value: 0x7f060001
 			public const int linearLayout1 = 2131099649;
 			
+			// aapt resource value: 0x7f06000d
+			public const int linearLayout2 = 2131099661;
+			
+			// aapt resource value: 0x7f06000c
+			public const int linearLayout4 = 2131099660;
+			
 			// aapt resource value: 0x7f060004
 			public const int login = 2131099652;
 			
@@ -153,6 +159,9 @@ namespace tuvsu
 			
 			// aapt resource value: 0x7f060000
 			public const int scrollView1 = 2131099648;
+			
+			// aapt resource value: 0x7f06000e
+			public const int titleNews = 2131099662;
 			
 			static Id()
 			{
@@ -172,6 +181,12 @@ namespace tuvsu
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int News = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int NewsRow = 2130903043;
 			
 			static Layout()
 			{

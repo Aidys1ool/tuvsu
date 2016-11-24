@@ -73,8 +73,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHelper\DataBase.cs" />
     <Compile Include="mActivity\AuthActivity.cs" />
+    <Compile Include="mActivity\NewsActivity.cs" />
+    <Compile Include="mAdapter\NewsAdapter.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="mModel\pNews.cs" />
+    <Compile Include="mModel\pUsers.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -84,6 +89,12 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\Auth.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\News.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NewsRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -156,8 +167,6 @@
     <AndroidResource Include="Resources\drawable\progressBarStyle.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="mAdapter\" />
-    <Folder Include="mModel\" />
     <Folder Include="mProperties\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
