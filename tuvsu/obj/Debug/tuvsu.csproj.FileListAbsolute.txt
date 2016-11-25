@@ -70,5 +70,6 @@ E:\visualStudio\tuvsu\tuvsu\obj\Debug\android\assets\Mono.CSharp.dll.mdb
 E:\visualStudio\tuvsu\tuvsu\obj\Debug\android\assets\SQLite-net.dll.mdb
 E:\visualStudio\tuvsu\tuvsu\obj\Debug\res\layout\news.xml
 E:\visualStudio\tuvsu\tuvsu\obj\Debug\res\layout\newsrow.xml
+E:\visualStudio\tuvsu\tuvsu\obj\Debug\res\layout\newsdetail.xml
 E:\visualStudio\tuvsu\tuvsu\obj\Debug\tuvsu.dll.mdb
 E:\visualStudio\tuvsu\tuvsu\bin\Debug\tuvsu.dll.mdb

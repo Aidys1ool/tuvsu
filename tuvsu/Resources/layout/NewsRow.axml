@@ -6,36 +6,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linearLayout4">
-  
-  <LinearLayout
-          android:orientation="horizontal"
-          android:id="@+id/linearLayout1"
-          android:weightSum="100"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content">
-    <ImageView
-        android:id="@+id/imageView1"
-        android:scaleType="centerInside"
-        android:src="@drawable/not_avatar"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:id="@+id/linearLayout2"
-        android:layout_weight="80"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1"
+        android:weightSum="100"
         android:layout_width="match_parent"
-        android:layout_marginLeft="10dp">
-      <TextView
-          android:text="Text"
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:id="@+id/titleNews"
-          android:textSize="19dp"
-          android:gravity="fill_vertical"
-          android:textStyle="bold"
-          android:textColor="@color/titleColor" />
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:scaleType="centerInside"
+            android:src="@drawable/not_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:layout_weight="80"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:text="Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/titleNews"
+                android:textSize="19dp"
+                android:gravity="fill_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/titleColor" />
+        </LinearLayout>
     </LinearLayout>
-  </LinearLayout>
-  
 </LinearLayout>

@@ -13,6 +13,7 @@
     </activity>
     <activity android:label="AuthActivity" android:name="md5da527606c0cd24e280642d1cd35b12c0.AuthActivity" />
     <activity android:label="NewsActivity" android:name="md5da527606c0cd24e280642d1cd35b12c0.NewsActivity" />
+    <activity android:label="NewsDetailActivity" android:name="md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="tuvsu.tuvsu.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

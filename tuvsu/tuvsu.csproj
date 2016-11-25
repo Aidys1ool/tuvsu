@@ -76,8 +76,10 @@
     <Compile Include="DataHelper\DataBase.cs" />
     <Compile Include="mActivity\AuthActivity.cs" />
     <Compile Include="mActivity\NewsActivity.cs" />
+    <Compile Include="mActivity\NewsDetailActivity.cs" />
     <Compile Include="mAdapter\NewsAdapter.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="mModel\ImageDownload.cs" />
     <Compile Include="mModel\pNews.cs" />
     <Compile Include="mModel\pUsers.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -95,6 +97,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\NewsRow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NewsDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

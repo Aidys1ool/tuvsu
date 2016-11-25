@@ -14,3 +14,7 @@ tuvsu.mActivity.NewsActivity, tuvsu;md5da527606c0cd24e280642d1cd35b12c0.NewsActi
 tuvsu.mActivity.NewsActivity, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
 tuvsu.mActivity.NewsActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
 tuvsu.mactivity.NewsActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
+tuvsu.mActivity.NewsDetailActivity, tuvsu;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
+tuvsu.mActivity.NewsDetailActivity, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
+tuvsu.mActivity.NewsDetailActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
+tuvsu.mactivity.NewsDetailActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
