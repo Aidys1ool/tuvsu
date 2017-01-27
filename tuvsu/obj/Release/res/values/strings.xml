@@ -1,0 +1,1 @@
+<resources><string name="ApplicationName">ТывГУ</string><!--AUTH STRING--><string name="auth_open">Войти</string><string name="auth_guest">Войти как гость</string><string name="auth_error">Неверное имя пользователя или пароль. Проверьте правильность введенных данных.</string></resources>

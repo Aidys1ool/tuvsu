@@ -1,0 +1,20 @@
+tuvsu.MainActivity, tuvsu;md5f0337266e124c53691a17e90dd71e50a.MainActivity
+tuvsu.MainActivity, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5f0337266e124c53691a17e90dd71e50a.MainActivity
+tuvsu.MainActivity;md5f0337266e124c53691a17e90dd71e50a.MainActivity
+tuvsu.MainActivity;md5f0337266e124c53691a17e90dd71e50a.MainActivity
+tuvsu.ListAdapter.NewsAdapter, tuvsu;md5d471763ff28d24fb57b2d9d0746b7e25.NewsAdapter
+tuvsu.ListAdapter.NewsAdapter, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d471763ff28d24fb57b2d9d0746b7e25.NewsAdapter
+tuvsu.ListAdapter.NewsAdapter;md5d471763ff28d24fb57b2d9d0746b7e25.NewsAdapter
+tuvsu.listadapter.NewsAdapter;md5d471763ff28d24fb57b2d9d0746b7e25.NewsAdapter
+tuvsu.mActivity.AuthActivity, tuvsu;md5da527606c0cd24e280642d1cd35b12c0.AuthActivity
+tuvsu.mActivity.AuthActivity, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5da527606c0cd24e280642d1cd35b12c0.AuthActivity
+tuvsu.mActivity.AuthActivity;md5da527606c0cd24e280642d1cd35b12c0.AuthActivity
+tuvsu.mactivity.AuthActivity;md5da527606c0cd24e280642d1cd35b12c0.AuthActivity
+tuvsu.mActivity.NewsActivity, tuvsu;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
+tuvsu.mActivity.NewsActivity, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
+tuvsu.mActivity.NewsActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
+tuvsu.mactivity.NewsActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsActivity
+tuvsu.mActivity.NewsDetailActivity, tuvsu;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
+tuvsu.mActivity.NewsDetailActivity, tuvsu, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
+tuvsu.mActivity.NewsDetailActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity
+tuvsu.mactivity.NewsDetailActivity;md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tuvsu.tuvsu" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="tuvsu" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon">
+    <activity android:icon="@drawable/icon" android:label="tuvsu" android:name="md5f0337266e124c53691a17e90dd71e50a.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:label="AuthActivity" android:name="md5da527606c0cd24e280642d1cd35b12c0.AuthActivity" />
+    <activity android:label="NewsActivity" android:name="md5da527606c0cd24e280642d1cd35b12c0.NewsActivity" />
+    <activity android:label="NewsDetailActivity" android:name="md5da527606c0cd24e280642d1cd35b12c0.NewsDetailActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="tuvsu.tuvsu.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+</manifest>

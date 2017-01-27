@@ -37,8 +37,8 @@ namespace tuvsu.mActivity
 
             //Photo URL
             mModel.ImageDownload imageDownload = new mModel.ImageDownload();
-            var imageBitmap = imageDownload.GetImageBitmapFromUrl("http://tuvsu.ru/files/news/" + Intent.GetStringExtra("photo")); //??
-            photo.SetImageBitmap(imageBitmap);
+            //var imageBitmap = imageDownload.GetImageBitmapFromUrl("http://tuvsu.ru/files/news/" + Intent.GetStringExtra("photo")); //??
+            //photo.SetImageBitmap(imageBitmap);
         }
     }
 }

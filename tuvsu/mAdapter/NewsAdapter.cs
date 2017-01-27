@@ -13,11 +13,14 @@ using Android.Widget;
 using tuvsu.mModel;
 using Android.Graphics;
 using System.Net;
+using System.Threading.Tasks;
 
 namespace tuvsu.ListAdapter
 {
     class NewsAdapter : BaseAdapter<pNews>
     {
+        mModel.ImageDownload imageDownload = new mModel.ImageDownload();
+
         private List<pNews> newsList;
         private Context mContext;
 
@@ -50,49 +53,45 @@ namespace tuvsu.ListAdapter
 
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
+            /*
             View row = convertView;
-            if(row == null)
+            if (row == null)
             {
-                //row = LayoutInflater.From(mContext).Inflate(Resource.Layout.ListViewNewsRow, null, false);
                 row = LayoutInflater.From(mContext).Inflate(Resource.Layout.NewsRow, null, false);
             }
             //Загрузка изображение по URL
-            mModel.ImageDownload imageDownload = new mModel.ImageDownload();
             ImageView image = row.FindViewById<ImageView>(Resource.Id.imageView1);
-            var imageBitmap = imageDownload.GetImageBitmapFromUrl("http://tuvsu.ru/files/news/" + newsList[position].new_photo);
-            image.SetImageBitmap(imageBitmap);
-
-            //Android.Net.Uri url = Android.Net.Uri.Parse(newsList[position].new_photo);
-            //image.SetImageURI(Android.Net.Uri.Parse("http://tuvsu.ru/files/news/" + newsList[position].new_photo));
+            Android.Util.Log.Info("1111111111 111111111111111", newsList.Count().ToString());
+            this.imageAsync(image, "http://tuvsu.ru/files/news/" + newsList[position].new_photo);
 
             TextView title = row.FindViewById<TextView>(Resource.Id.titleNews);
             title.Text = newsList[position].new_title;
 
-            //TextView content = row.FindViewById<TextView>(Resource.Id.contentNews);
-            //content.Text = newsList[position].new_content;
-
-            //TextView uid = row.FindViewById<TextView>(Resource.Id.news_id);
-            //uid.Text = newsList[position].new_uid.ToString();
-
             return row;
+            */
+
+            View view = convertView;
+
+            if (view == null)
+                view = LayoutInflater.From(mContext).Inflate(Resource.Layout.NewsRow, null, false);
+
+            pNews item = this[position];
+
+            TextView title = view.FindViewById<TextView>(Resource.Id.titleNews);
+            title.Text = item.new_title;
+
+            ImageView image = view.FindViewById<ImageView>(Resource.Id.imageView1);
+            this.imageAsync(image, "http://tuvsu.ru/files/news/" + newsList[position].new_photo);
+
+            return view;
         }
 
-        /*
-        public Bitmap GetImageBitmapFromUrl(string url)
+        async void imageAsync(ImageView img, string url)
         {
-            Bitmap imageBitmap = null;
-
-            using (var webClient = new WebClient())
-            {
-                var imageBytes = webClient.DownloadData(url);
-                if (imageBytes != null && imageBytes.Length > 0)
-                {
-                    imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
-                }
-            }
-
-            return imageBitmap;
+            var imageBitmap = await imageDownload.GetImageBitmapFromUrl(url);
+            img.SetImageBitmap (imageBitmap);
         }
-        */
+
+
     }
 }

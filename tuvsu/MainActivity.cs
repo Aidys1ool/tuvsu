@@ -28,13 +28,15 @@ namespace tuvsu
             if (resDB)
             {
                 
-                Intent intent = new Intent(this, typeof(mActivity.NewsActivity));
+                //Intent intent = new Intent(this, typeof(mActivity.NewsActivity));
+                Intent intent = new Intent(this, typeof(mActivity.AuthActivity));
                 StartActivity(intent);
                 Finish();
             }
             else
             {
-                Intent intent = new Intent(this, typeof(mActivity.AuthActivity));
+                //Intent intent = new Intent(this, typeof(mActivity.AuthActivity));
+                Intent intent = new Intent(this, typeof(mActivity.NewsActivity));
                 StartActivity(intent);
                 Finish();
             }

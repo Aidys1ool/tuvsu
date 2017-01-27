@@ -68,6 +68,7 @@ namespace tuvsu.mActivity
             a = new List<mModel.pNews>();
 
             //Событие scroll listView
+            
             listView.Scroll += (sender, e) =>
             {
                 try
@@ -111,6 +112,7 @@ namespace tuvsu.mActivity
         //Загрузка news при открытии страницы новостей
         private void NewsDataDownload(object sender, DownloadDataCompletedEventArgs e)
         {
+
             RunOnUiThread(() =>
             {
                 string json = Encoding.UTF8.GetString(e.Result);

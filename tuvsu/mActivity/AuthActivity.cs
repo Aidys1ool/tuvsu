@@ -12,7 +12,7 @@ using Android.Widget;
 using Android.Text.Method;
 using System.Net;
 using Newtonsoft.Json;
-
+using Android.Util;
 
 namespace tuvsu.mActivity
 {
@@ -73,13 +73,14 @@ namespace tuvsu.mActivity
                     try
                     {
                         WebClient client = new WebClient();
+                        Toast.MakeText(this, mLogin + " - " + mPass, ToastLength.Short);
                         Uri uri = new Uri("http://tuvsu.ru/mobile/auth.php?get=1&log=" + mLogin + "&pass=" + mPass);
                         client.DownloadDataAsync(uri);
                         client.DownloadDataCompleted += ConJson;
                     }
                     catch (Exception ex)
                     {
-                        Toast.MakeText(this, "Проверьте подключение к интернету!", ToastLength.Short).Show();
+                        Toast.MakeText(this, ex.ToString() + " Проверьте подключение к интернету!", ToastLength.Short).Show();
                     }
                 }
 
@@ -89,8 +90,12 @@ namespace tuvsu.mActivity
             //Войти как гость
             guest.Click += (sender, e) =>
             {
+                Intent intent = new Intent(this, typeof(mActivity.NewsActivity));
+                progres.Visibility = ViewStates.Gone;
+                StartActivity(intent);
+                Finish();
                 //Intent intent = new Intent(this, typeof(Activitys.MenuActivity));
-               // StartActivity(intent);
+                // StartActivity(intent);
             };
         }
         //ПОлучение данных из сервера
@@ -101,10 +106,13 @@ namespace tuvsu.mActivity
                 try
                 {
                     string json = Encoding.UTF8.GetString(e.Result);
-                    if (Convert.ToBoolean(json))
+                    Toast.MakeText(this, json, ToastLength.Short);
+                    
+                    if (json == "1")
+                    //if(json.Length > 0)
                     {
                         tuvsu.mModel.pUsers users = new tuvsu.mModel.pUsers { log_users = log.Text, pass_users = pass.Text };
-                        db.insertIntoTable(users);
+                        //db.insertIntoTable(users); Ошибка работы с локальной бд
 
                         Intent intent = new Intent(this, typeof(mActivity.NewsActivity));
                         progres.Visibility = ViewStates.Gone;
@@ -116,10 +124,12 @@ namespace tuvsu.mActivity
                         progres.Visibility = ViewStates.Gone;
                         errorText.Visibility = ViewStates.Visible;
                     }
+                    
                 }
                 catch (Exception ex)
                 {
-                    Toast.MakeText(this, "Проверьте подключение к интернету!", ToastLength.Short).Show();
+                    Toast.MakeText(this, ex.ToString() + " Проверьте подключение к интернету!", ToastLength.Short).Show();
+                    Log.Info("Ошибка 1", ex.ToString());
                 }
                 finally
                 {
